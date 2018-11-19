@@ -2,8 +2,6 @@ package ode
 
 import "gonum.org/v1/gonum/mat"
 
-type Rhs func(t float64, x mat.Vector) mat.Vector
-
 func ExplicitEuler(
 	// derivative of x
 	f Rhs,
