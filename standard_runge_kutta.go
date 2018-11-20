@@ -9,7 +9,7 @@ func StandardRungeKutta() Solver {
 		0.5, 0,
 		1, 0,
 	})
-	b := mat.NewVecDense(4, []float64{1 / 6, 1 / 3, 1 / 3, 1 / 6})
+	b := mat.NewVecDense(4, []float64{1.0 / 6, 1.0 / 3, 1.0 / 3, 1.0 / 6})
 	c := mat.NewVecDense(4, []float64{0, 0.5, 0.5, 1})
 	return ExplicitRungeKutta(A, b, c)
 }
