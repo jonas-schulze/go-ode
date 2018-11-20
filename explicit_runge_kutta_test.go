@@ -1,6 +1,7 @@
 package ode
 
 import (
+	"math"
 	"testing"
 
 	"gonum.org/v1/gonum/mat"
@@ -9,6 +10,7 @@ import (
 var (
 	exp_f  = func(_ float64, x mat.Vector) mat.Vector { return x }
 	exp_x0 = mat.NewVecDense(1, []float64{1})
+	exp_x1 = mat.NewVecDense(1, []float64{math.E})
 )
 
 const (
